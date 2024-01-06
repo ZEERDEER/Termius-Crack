@@ -1,4 +1,5 @@
 # Termius-Crack
+<div align="center"> <img src="https://profile-counter.glitch.me/ZEERDEER/count.svg" /> </div>
 
 Download [Releases](https://github.com/ZEERDEER/Termius-Crack/releases/tag/Termius)
 
