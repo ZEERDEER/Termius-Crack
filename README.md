@@ -11,3 +11,4 @@ C:\Users\[username]\AppData\Local\Programs\Termius\resources
 ```
 
 Delete file ```app.asar```
+ 
