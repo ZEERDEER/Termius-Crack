@@ -10,5 +10,5 @@ Replace *[username]* with your username.
 C:\Users\[username]\AppData\Local\Programs\Termius\resources
 ```
 
-Delete file `app.asar`
+Delete file `app.asar` 
  
