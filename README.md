@@ -1,7 +1,7 @@
 # Termius-Crack
 <div align="center"> <img src="https://profile-counter.glitch.me/ZEERDEER/count.svg" /> </div>
 
-Download [Releases](https://github.com/ZEERDEER/Termius-Crack/releases/tag/Termius)
+Download [Releases](https://github.com/ZEERDEER/Termius-Crack/releases/tag/main)
 
 Unzip the package folder and move the "app" folder to the following directory.
 
