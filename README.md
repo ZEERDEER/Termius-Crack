@@ -13,3 +13,4 @@ C:\Users\[username]\AppData\Local\Programs\Termius\resources
 Delete file `app.asar` 
  
 If you don't need an update, Please delete `app-update.yml` 
+ 
