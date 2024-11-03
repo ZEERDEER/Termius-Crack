@@ -35,6 +35,14 @@ def unzip_file(zip_path, extract_to):
 def move_app_folder(source, destination):
     app_folder = os.path.join(source, 'app')
     if os.path.exists(app_folder):
+        destination_app_folder = os.path.join(destination, 'app')
+        if os.path.exists(destination_app_folder):
+            user_input = input(f"The 'app' folder already exists at {destination}. Do you want to overwrite it? (yes/no): ").strip().lower()
+            if user_input == 'yes':
+                delete_folder(destination_app_folder)
+            else:
+                print("Process aborted by the user.")
+                return False
         try:
             shutil.move(app_folder, destination)
         except shutil.Error as e:
@@ -64,42 +72,51 @@ def main():
     download_path = "TermiusCrack.zip"
     extract_to = "TermiusCrack"
     
-    print("Downloading ZIP file...")
-    if not download_zip(zip_url, download_path):
-        return
-    print("\nDownload completed.")
+    print(f"ZIP file will be downloaded to: {os.path.abspath(download_path)}")
+    print(f"ZIP file will be extracted to: {os.path.abspath(extract_to)}")
     
-    print("Unzipping the file...")
-    if not unzip_file(download_path, extract_to):
-        return
-    
-    username = os.getlogin()
-    destination = f"C:\\Users\\{username}\\AppData\\Local\\Programs\\Termius\\resources"
-    
-    app_folder_path = os.path.join(destination, 'app')
-    if os.path.exists(app_folder_path):
-        user_input = input(f"The 'app' folder already exists at {destination}. Do you want to continue? (yes/no): ").strip().lower()
-        if user_input != 'yes':
-            print("Process aborted by the user.")
+    try:
+        print("Downloading ZIP file...")
+        if not download_zip(zip_url, download_path):
             return
+        print("\nDownload completed.")
+        
+        print("Unzipping the file...")
+        if not unzip_file(download_path, extract_to):
+            return
+        
+        username = os.getlogin()
+        destination = f"C:\\Users\\{username}\\AppData\\Local\\Programs\\Termius\\resources"
+        
+        app_folder_path = os.path.join(destination, 'app')
+        if os.path.exists(app_folder_path):
+            user_input = input(f"The 'app' folder already exists at {destination}. Do you want to continue? (yes/no): ").strip().lower()
+            if user_input != 'yes':
+                print("Process aborted by the user.")
+                return
+        
+        print("Moving the 'app' folder...")
+        if not move_app_folder(extract_to, destination):
+            return
+        
+        app_asar_path = os.path.join(destination, 'app.asar')
+        print("Deleting the 'app.asar' file...")
+        delete_file(app_asar_path)
+        
+        delete_update = input("Do you want to delete 'app-update.yml'? (yes/no): ").strip().lower()
+        if delete_update == 'yes':
+            app_update_path = os.path.join(destination, 'app-update.yml')
+            print("Deleting the 'app-update.yml' file...")
+            delete_file(app_update_path)
     
-    print("Moving the 'app' folder...")
-    if not move_app_folder(extract_to, destination):
-        return
+    except Exception as e:
+        print(f"An error occurred: {e}")
     
-    app_asar_path = os.path.join(destination, 'app.asar')
-    print("Deleting the 'app.asar' file...")
-    delete_file(app_asar_path)
-    
-    delete_update = input("Do you want to delete 'app-update.yml'? (yes/no): ").strip().lower()
-    if delete_update == 'yes':
-        app_update_path = os.path.join(destination, 'app-update.yml')
-        print("Deleting the 'app-update.yml' file...")
-        delete_file(app_update_path)
-    
-    delete_file(download_path)
-    delete_folder(extract_to)
-    print("Process completed.")
+    finally:
+        print("Cleaning up...")
+        delete_file(download_path)
+        delete_folder(extract_to)
+        print("Process completed.")
 
 if __name__ == "__main__":
     main()
