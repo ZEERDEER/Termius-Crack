@@ -113,7 +113,7 @@ def main():
     app_path = f"C:\\Users\\{username}\\AppData\\Local\\Programs\\Termius\\resources\\app\\package.json"
     unpacked_path = f"C:\\Users\\{username}\\AppData\\Local\\Programs\\Termius\\resources\\app.asar.unpacked\\package.json"
     current_version = get_version_from_package_json(app_path, unpacked_path)
-    print(f"Current Installer version:{INSTALLER_VERSION}")
+    print(f"Current Installer version: {INSTALLER_VERSION}")
     print(f"Current Termius version: {current_version}")
 
     repo_url = "ZEERDEER/Termius-Crack"
