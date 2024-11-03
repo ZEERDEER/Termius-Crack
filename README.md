@@ -20,6 +20,11 @@ If you don't need an update, Please delete `app-update.yml`
 # Automated Install(by JustablockCode):
 Download [termius.py](https://raw.githubusercontent.com/ZEERDEER/Termius-Crack/refs/heads/main/termius.py) file.
 
+Use python's pip in terminal to download package requests.
+```
+pip install requests
+```
+
 Run it on Windows 10/11.
 
 Ready :D
