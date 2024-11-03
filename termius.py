@@ -177,6 +177,12 @@ def main():
             app_update_path = os.path.join(destination, 'app-update.yml')
             print("Deleting the 'app-update.yml' file...")
             delete_file(app_update_path)
+
+        delete_package_json = input("Do you want to delete 'package.json' (located in the resources folder, exist in new app folder, not used anymore)? (yes/no): ").strip().lower()
+        if delete_package_json == 'yes':
+            package_json_path = os.path.join(destination, 'package.json')
+            print("Deleting the 'package.json' file...")
+            delete_file(package_json_path)
     
     except Exception as e:
         print(f"An error occurred: {e}")
