@@ -1,30 +1,27 @@
-# Termius-Crack
+# 📚 Termius Tool
 
-## Manual Install:
-<div align="center"> <img src="https://profile-counter.glitch.me/ZEERDEER/count.svg" /> </div>
+## 🚀 Project Introduction
+This project aims to help users unlock Termius Pro, granting access to all the premium features of the app for free.
 
-Download [Releases](https://github.com/ZEERDEER/Termius-Crack/releases/tag/main)
-
-Unzip the package folder and move the "app" folder to the following directory.
-
-Replace *[username]* with your username.
-```
-C:\Users\[username]\AppData\Local\Programs\Termius\resources
-```
-
-Delete file `app.asar` 
- 
-If you don't need an update, Please delete `app-update.yml` 
+**⚠ Please note that this action may violate the software's terms of service. Proceed with caution and assess the risks beforehand.**
 
 
-# Automated Install(by JustablockCode):
-Download [termius.py](https://raw.githubusercontent.com/ZEERDEER/Termius-Crack/refs/heads/main/termius.py) file.
+## ⚠️ Disclaimer
+**Important Notice:** This tutorial is for educational and research purposes only. Any illegal use or infringement is the responsibility of the user. Cracking and modifying software may violate relevant laws and regulations. Please ensure compliance with local laws before following this tutorial. The creators of this project are not responsible for any losses or legal consequences arising from the use of this tutorial.
 
-Use python's pip in terminal to download package requests.
-```
-pip install requests
-```
+## 📝 Tutorial Steps
 
-Run it on Windows 10/11.
+> **Tip:** This tutorial will automatically download and install Node.js.
 
-Ready :D
+### 1. Download Termius
+Ensure you download Termius from the official website, not from the Microsoft Store. Click the link below:
+👉 [Download Termius](https://termius.com/download/windows)
+
+### 2. Download Releases
+Download the release version of this project. Click the link below to get the latest releases:
+👉 [Download Releases](https://github.com/ZEERDEER/Termius-Crack/releases)
+
+### 3. Run Termius Tool
+Run Termius Tool as instructed to complete the process!
+
+**🌟 Unless stated otherwise, this tool will support future versions.**
