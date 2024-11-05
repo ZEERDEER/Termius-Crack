@@ -14,8 +14,7 @@ This project aims to help users unlock Termius Pro.
 > **Tip:** This tutorial will automatically download and install Node.js.
 
 ### 1. Download Termius
-Ensure you download Termius from the official website, not from the Microsoft Store. Click the link below:
-👉 [Download Termius](https://termius.com/download/windows)
+Ensure you download Termius from the official website, not from the Microsoft Store. After installation, log in to your Termius account to access your saved connections and settings. Click the link below:👉 [Download Termius](https://termius.com/download/windows)
 
 ### 2. Download Releases
 Download the release version of this project. Click the link below to get the latest releases:
