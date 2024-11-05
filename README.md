@@ -1,7 +1,7 @@
 # 📚 Termius Tool
 
 ## 🚀 Project Introduction
-This project aims to help users unlock Termius Pro, granting access to all the premium features of the app for free.
+This project aims to help users unlock Termius Pro.
 
 **⚠ Please note that this action may violate the software's terms of service. Proceed with caution and assess the risks beforehand.**
 
