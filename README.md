@@ -24,3 +24,5 @@ Download the release version of this project. Click the link below to get the la
 Run Termius Tool as instructed to complete the process!
 
 **🌟 Unless stated otherwise, this tool will support future versions.**
+
+<div align="center"> <img src="https://profile-counter.glitch.me/ZEERDEER/count.svg" /> </div>
