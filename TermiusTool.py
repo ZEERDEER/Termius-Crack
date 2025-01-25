@@ -43,8 +43,6 @@ def download_nodejs():
             downloaded += len(data)
             f.write(data)
             progress = downloaded * 100 / total_size
-            
-            # 只保留控制台进度显示
             done = int(50 * downloaded / total_size)
             sys.stdout.write('\r[{}{}] {:.1f}%'.format(
                 '=' * done, ' ' * (50-done), progress
