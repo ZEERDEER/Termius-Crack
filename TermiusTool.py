@@ -30,7 +30,7 @@ def download_nodejs():
     Returns: installer path
     """
     print('Downloading Node.js...')
-    url = 'https://nodejs.org/dist/v22.11.0/node-v22.11.0-x64.msi'
+    url = 'https://nodejs.org/dist/v22.15.0/node-v22.15.0-x64.msi'
     response = requests.get(url, stream=True)
     installer_path = os.path.join(os.environ['TEMP'], 'nodejs_installer.msi')
     
